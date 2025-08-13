@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-    <h1>cake</h1>
+    <h1>Cake</h1>
     <h3>Ingredients</h3>
     <h3>Instructions</h3>
 </body>
