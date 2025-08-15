@@ -53,14 +53,7 @@ body {
     padding-right: 60px;
 }
 
-.recipe-img {
-    max-width: 400px;
-    border-radius: 10px;
-    transition: transform 0.2s ease;
-}
-.recipe-img:hover {
-    transform: scale(1.05);
-}
+
 #insert_para {
     position: relative;
     display: inline-block;
