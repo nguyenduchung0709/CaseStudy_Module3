@@ -1,16 +1,50 @@
-#header {
-    width: 100%;
-    height: 100px;
-    background-color: #ffffff;
-    color: darkorange;
-    padding-top: 30px;
+header {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E1E8ED;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: fixed;
-    border-bottom: 1px solid #000000;
     top: 0;
-    z-index: 1000;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+.logo a {
+    text-decoration: none;
+    color: darkorange;
+    font-size: 24px;
+    font-weight: bold;
+}
+nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #DF321B;
+    font-size: 25px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+    padding: 10px;
+}
+nav a:hover {
+    border-bottom: 2px solid #DF321B;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 body {
     padding-top: 100px;
+
+
 }
 .custom-container {
     max-width: 980px;
