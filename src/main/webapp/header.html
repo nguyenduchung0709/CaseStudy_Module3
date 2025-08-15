@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Header</title>
+<!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">-->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,11 +15,33 @@
   </div>
   <nav>
     <a href="home.html" target="_top">Home</a>
-    <a href="ingredients_of_meatball.html" target="_top" >Ingredients</a>
-    <a href="recipes.html" target="_blank">Recipes</a>
+    <div class="dropdown">
+      <a href="ingredients_of_meatball.html" target="_top" class="dropbtn">Recipes</a>
+      <div class="dropdown-content">
+        <a href="ingredients_of_coldNoodle.html">Cold Noodles With Zucchini</a>
+        <a href="ingredients_of_burstCheey.html">Burst Cherry Tomato Orzotto</a>
+        <a href="ingredients_of_chicken.html">Slow Cooker Gochujang Chicken and Tomatoes</a>
+        <a href="ingredients_of_scallops.html">Scallops With Bread-Crumb Salsa Verde</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="ingredients_of_meatball.html" target="_top" class="dropbtn">Ingredients</a>
+      <div class="dropdown-content">
+        <div class="first_col">
+          <ul>
+            <li class="header-col">Eggs</li>
+            <li><a href="">Ingredient</a></li>
+            <li><a href="">Ingredient</a></li>
+            <li><a href="">Ingredient</a></li>
+            <li><a href="">Ingredient</a></li>
+          </ul>
+        </div>  
+        
+      </div>
+    </div>
     <a href="contact.html" target="_blank" >Contact</a>
   </nav>
 </header>
-
+<!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>-->
 </body>
 </html>
