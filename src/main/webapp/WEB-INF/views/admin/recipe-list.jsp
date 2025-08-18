@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: ductr
@@ -21,13 +22,15 @@
             <td>Ingredients</td>
             <td>Instructions</td>
         </tr>
-        <tr>
-            <td>1</td>
-            <td>Chocolate</td>
-            <td>img/meatball.jpg</td>
-            <td>Cacao, Milk</td>
-            <td>Whisk</td>
-        </tr>
+        <c:forEach var="recipe" items="${listRecipe}">
+            <tr>
+                <td><c:out value="${recipe.id}"/> </td>
+                <td><c:out value="${recipe.name}"/></td>
+                <td><c:out value="${recipe.imageURL}"/></td>
+                <td><c:out value="${recipe.ingredients}"/></td>
+                <td><c:out value="${recipe.instructions}"/></td>
+            </tr>
+        </c:forEach>
     </table>
 </body>
 </html>

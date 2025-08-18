@@ -39,6 +39,7 @@ public class AdminRecipeController extends HttpServlet {
                     break;
                 case "delete":
                     deleteRecipe(req,resp);
+                    dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/recipe-list.jsp");
                     break;
                 case "details":
                     int id = Integer.parseInt(req.getParameter("id"));
@@ -47,6 +48,8 @@ public class AdminRecipeController extends HttpServlet {
                     dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/recipeDetails.jsp");
                     break;
                 default:
+                    List<Recipe> listRecipe = recipeDAO.selectAllRecipes();
+                    req.setAttribute("listRecipe",listRecipe);
                     dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/recipe-list.jsp");
             }
         } catch (SQLException e) {
@@ -66,14 +69,23 @@ public class AdminRecipeController extends HttpServlet {
             switch (action) {
                 case "create":
                     addRecipe(req, resp);
+                    dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/recipe-list.jsp");
                     break;
                 case "edit":
                     editRecipe(req, resp);
+                    dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/recipe-list.jsp");
                     break;
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
+        dispatcher.forward(req,resp);
+    }
+
+    private void listRecipe(HttpServletRequest req, HttpServletResponse resp) throws SQLException, ServletException, IOException {
+        List<Recipe> listRecipe = recipeDAO.selectAllRecipes();
+        req.setAttribute("listRecipe",listRecipe);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/recipe-list.jsp");
         dispatcher.forward(req,resp);
     }
 
@@ -84,8 +96,6 @@ public class AdminRecipeController extends HttpServlet {
         String instructions = req.getParameter("instructions");
         Recipe newRecipe = new Recipe(name, imageURL, ingredients, instructions);
         recipeDAO.addRecipe(newRecipe);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/recipe-list.jsp");
-        dispatcher.forward(req,resp);
     }
 
     private void editRecipe(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, SQLException {
@@ -97,17 +107,13 @@ public class AdminRecipeController extends HttpServlet {
 
         Recipe updatedRecipe = new Recipe(id, name, imageURL, ingredients, instructions);
         recipeDAO.editRecipe(updatedRecipe);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/recipe-list.jsp");
-        dispatcher.forward(req,resp);
     }
 
     private void deleteRecipe(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException, SQLException {
         int id = Integer.parseInt(req.getParameter("id"));
         recipeDAO.deleteRecipe(id);
 
-        List<Recipe> recipeList = recipeDAO.selectAllRecipes();
-        req.setAttribute("recipeList", recipeList);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("/admin/recipe-list.jsp");
-        dispatcher.forward(req,resp);
+        List<Recipe> listRecipe = recipeDAO.selectAllRecipes();
+        req.setAttribute("listRecipe", listRecipe);
     }
 }
