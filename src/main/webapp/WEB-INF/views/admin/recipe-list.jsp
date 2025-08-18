@@ -24,7 +24,7 @@
         <tr>
             <td>1</td>
             <td>Chocolate</td>
-            <td></td>
+            <td>img/meatball.jpg</td>
             <td>Cacao, Milk</td>
             <td>Whisk</td>
         </tr>

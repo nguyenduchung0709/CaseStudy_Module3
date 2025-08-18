@@ -50,7 +50,16 @@ public class Recipe {
     public Recipe() {}
 
     public Recipe(int id, String name, String imageURL, String ingredients, String instructions) {
+        super();
         this.id = id;
+        this.name = name;
+        this.imageURL = imageURL;
+        this.ingredients = ingredients;
+        this.instructions = instructions;
+    }
+
+    public Recipe(String name, String imageURL, String ingredients, String instructions) {
+        super();
         this.name = name;
         this.imageURL = imageURL;
         this.ingredients = ingredients;
