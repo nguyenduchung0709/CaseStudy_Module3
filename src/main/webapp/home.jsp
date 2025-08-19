@@ -1,7 +1,5 @@
-<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<!DOCTYPE html>
-<!DOCTYPE html>
-<html>
+
+<html lang="en">
 <head>
     <title>Home Cooking</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,14 +16,13 @@
     </style>
 </head>
 <body>
-<iframe src="header.html"></iframe>
-
-<div class="container custom-container" style="margin-top: 60px;">
+<jsp:include page="header.jsp"/>
+<div class="container " style="margin-top: 60px;">
     <div id="content">
         <div class="row align-items-center">
             <div class="col-7">
-                <a href="" target="_blank">
-                    <img src="img/meatball.jpg" class="w-100" alt="">
+                <a href="ingredients_of_meatball.jsp" target="_blank">
+                    <img src="img/meatball.jpg" class="w-100" alt="meatball">
                 </a>
             </div>
             <div class="col-5 align-items-center">
@@ -42,7 +39,7 @@
     <hr>
     <div>
         <div id="insert_para">
-            <a href="" target="_blank">
+            <a href="ingredients_of_noodle.html" target="_blank">
                 <img src="img/vegetable.jpg" alt="">
             </a>
             <p class="para1">
