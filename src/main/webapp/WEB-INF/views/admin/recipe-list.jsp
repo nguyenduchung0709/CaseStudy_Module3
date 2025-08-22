@@ -14,7 +14,7 @@
 <body>
     <h1>Recipe List</h1>
     <a href="/admin/recipe?action=create">Add new</a>
-    <table>
+    <table cellpadding="5" border="10px">
         <tr>
             <td>ID</td>
             <td>Name</td>
@@ -29,6 +29,10 @@
                 <td><c:out value="${recipe.imageURL}"/></td>
                 <td><c:out value="${recipe.ingredients}"/></td>
                 <td><c:out value="${recipe.instructions}"/></td>
+                <td>
+                    <a href="/admin/recipe?action=edit&id=${recipe.id}">Edit</a>
+                    <a href="/admin/recipe?action=delete&id=${recipe.id}">Delete</a>
+                </td>
             </tr>
         </c:forEach>
     </table>

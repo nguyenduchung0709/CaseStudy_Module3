@@ -35,6 +35,9 @@ public class AdminRecipeController extends HttpServlet {
                     dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/recipe-create.jsp");
                     break;
                 case "edit":
+                    int idEdit = Integer.parseInt(req.getParameter("id"));
+                    Recipe recipeEdit = recipeDAO.getRecipeById(idEdit);
+                    req.setAttribute("recipe", recipeEdit);
                     dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/recipe-edit.jsp");
                     break;
                 case "delete":
