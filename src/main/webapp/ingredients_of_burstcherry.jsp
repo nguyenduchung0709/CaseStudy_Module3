@@ -6,8 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,14 +27,14 @@
         <div class="row  align-items-center" style="margin-bottom: 20px; border-bottom: 1px solid grey;">
             <div class="col-5 d-flex flex-column justify-content-center">
                 <div class="description">
-                    <p style="font-size: 40px; color: #DF321B">Meatballs With Any Meat</p>
+                    <p style="font-size: 40px; color: #DF321B">Burst Cherry Tomato Orzotto</p>
                     <br>
-                    <i class="bi bi-calendar"></i> Update Jun. 14 2025
-                    <p><strong>By <span style="text-decoration: underline;">Nguyen Duc Hung</span></strong></p>
+                    <i class="bi bi-calendar"></i> Published Sep 7 2024
+                    <p><strong>By <span style="text-decoration: underline;">Master Chep Duc Trung</span></strong></p>
                 </div>
             </div>
             <div class="col-7">
-                <img src="img/meatball.jpg" class="w-100" alt="">
+                <img src="img/burstcherry.jpg" class="w-100" alt="">
             </div>
         </div>
     </div>
@@ -46,8 +44,18 @@
                 <table>
                     <tr>
                         <th>Total Time</th>
-                        <td>20 minutes</td>
+                        <td>50 minutes</td>
                     </tr>
+
+                    <tr>
+                        <th>Prep Time</th>
+                        <td>10 minutes</td>
+                    </tr>
+                    <tr>
+                        <th>Cook Time</th>
+                        <td>40 minutes</td>
+                    </tr>
+
                     <tr>
                         <th>Rating</th>
 
@@ -56,7 +64,7 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i> (5,878)
+                            <i class="bi bi-star-half"></i> (1,458)
                         </td>
                     </tr>
                 </table>
@@ -64,25 +72,20 @@
                 <div class="info">
                     <strong>👉 More Meals</strong>
                     <p><a href="">🍜Cold Noodles With Zucchini</a></p>
-                    <p><a href="">🍅Burst Cherry Tomato Orzotto</a></p>
+                    <p><a href="">🍅Meat Ball With Any Meat</a></p>
                     <p><a href="">🍗Slow Cooker Gochujang Chicken and Tomatoes</a></p>
                 </div>
             </div>
             <div class="col-7">
                 <div class="process">
-                    <p>Making great meatballs is all about memorizing a basic ratio that you can adjust to suit your taste.
-                        Start with a pound of ground meat — any kind will work, even fish if you want to take it in that
-                        direction. Add ½ cup bread crumbs for lightness, a teaspoon of salt, and an egg to bind it together.
-                        That’s all you need. Pepper and other spices, chopped herbs and minced allium (garlic, onion,
-                        scallions or shallot) can be added to taste. Then broil or fry as you like.</p>
-
-                    <p><span style="font-weight: bold">Why You Should Trust This Recipe</span></p>
-
-                    Melissa Clark, a food writer for more than 25 years, creates her fresh takes on classic recipes by
-                    trying at least half a dozen different approaches. A professional recipe tester then makes her
-                    recipe a minimum of three times (and sometimes more than 12) to ensure it’ll come out perfectly for
-                    all home cooks. For these meatballs, Melissa tinkered with ratios of seasonings to breadcrumbs to
-                    ensure the formula works with any type of ground meat.</p>
+                    <p>Peak-season cherry tomatoes and fragrant basil join forces in this light and summery one-pot
+                        orzotto. Cherry tomatoes are first cooked down with aromatics until they burst and their juices
+                        thicken. This concentrated tomato mixture fortifies the broth, imparting its flavor to the orzo.
+                        Stirring every minute or so releases the pasta’s starch, while a pat of butter makes this dish
+                        silky and that much more reminiscent of a saucy risotto. The orzotto is only as good as the
+                        tomatoes you use, so be sure to use the best ones you can get your hands on. Topping each
+                        serving with a handful of arugula is a wonderful way to incorporate more greens and add a bit of
+                        fresh, peppery zing.</p>
                 </div>
             </div>
         </div>

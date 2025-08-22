@@ -6,8 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,14 +27,14 @@
         <div class="row  align-items-center" style="margin-bottom: 20px; border-bottom: 1px solid grey;">
             <div class="col-5 d-flex flex-column justify-content-center">
                 <div class="description">
-                    <p style="font-size: 40px; color: #DF321B">Meatballs With Any Meat</p>
+                    <p style="font-size: 40px; color: #DF321B">Slow Cooker Gochujang Chicken and Tomatoes</p>
                     <br>
-                    <i class="bi bi-calendar"></i> Update Jun. 14 2025
-                    <p><strong>By <span style="text-decoration: underline;">Nguyen Duc Hung</span></strong></p>
+                    <i class="bi bi-calendar"></i> Update Feb 12 2025
+                    <p><strong>By <span style="text-decoration: underline;">Gordon Ramsey</span></strong></p>
                 </div>
             </div>
             <div class="col-7">
-                <img src="img/meatball.jpg" class="w-100" alt="">
+                <img src="img/gochujang%20chicken.jpg" class="w-100" alt="">
             </div>
         </div>
     </div>
@@ -49,6 +47,13 @@
                         <td>20 minutes</td>
                     </tr>
                     <tr>
+
+                    <tr>
+                    <th>Prep Time</th>
+                    <td>20 minutes</td>
+                </tr>
+                    <tr></tr>
+
                         <th>Rating</th>
 
                         <td> 5

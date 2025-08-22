@@ -24,16 +24,16 @@
     <nav>
         <a href="home.jsp" target="_top">Home</a>
         <div class="dropdown">
-            <a href="ingredients_of_meatball.html" class="dropbtn">Recipes</a>
+            <a href="" class="dropbtn">Recipes</a>
             <div class="dropdown-content">
-                <a href="ingredients_of_coldNoodle.html">Cold Noodles With Zucchini</a>
-                <a href="ingredients_of_burstCheey.html">Burst Cherry Tomato Orzotto</a>
+                <a href="ingredients_of_noodles.jsp">Cold Noodles With Zucchini</a>
+                <a href="ingredients_of_burstcherry.html">Burst Cherry Tomato Orzotto</a>
                 <a href="ingredients_of_chicken.html">Slow Cooker Gochujang Chicken and Tomatoes</a>
                 <a href="ingredients_of_scallops.html">Scallops With Bread-Crumb Salsa Verde</a>
             </div>
         </div>
         <div class="dropdown">
-            <a href="ingredients_of_meatball.html" target="_top" class="dropbtn">Ingredients</a>
+            <a href="" target="_top" class="dropbtn">Ingredients</a>
             <div class="dropdown-content">
                 <div class="first_col">
                     <ul>

@@ -1,4 +1,5 @@
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html lang="en">
 <head>
     <title>Home Cooking</title>
@@ -37,9 +38,10 @@
     </div>
 
     <hr>
-    <div>
+    <div class="row">
+        <div class="col-12">
         <div id="insert_para">
-            <a href="ingredients_of_noodle.html" target="_blank">
+            <a href="ingredients_of_noodles.jsp" target="_blank">
                 <img src="img/vegetable.jpg" alt="">
             </a>
             <p class="para1">
@@ -47,34 +49,20 @@
                 Make these recipes when you need a fast, flavorful meal.
             </p>
         </div>
+        </div>
     </div>
 
-    <br>
     <div class="row">
+        <div class="list_food">
+            <c:forEach items="${listRecipe}" var="recipe">
         <div class="col-3">
-            <img src="img/gochujang%20chicken.jpg" class="w-100" alt="">
-            <p><span style="font-weight: bold">Slow Cooker Gochujang Chicken and Tomatoes</span> <br>
-                Eric Kim <br>
-                Time take: 6 hours</p>
+            <img src="<c:out value="${recipe.imageURL}" />" width="306" height="306" alt="">
+            <p><span style="font-weight: bold"><c:out value="${recipe.name}"/></span> <br>
+                <c:out value="${recipe.ingredients}"/> <br>
+                Time take: <c:out value="${recipe.instructions}"/> hours</p>
 
         </div>
-        <div class="col-3">
-            <img src="img/burstcherry.jpg" class="w-100" alt="">
-            <p><span style="font-weight: bold">Burst Cherry Tomato Orzotto</span><br>
-                Trung Duc <br>
-                Time take: 50 minutes</p>
-        </div>
-        <div class="col-3">
-            <img src="img/vegetable.jpg" class="w-100" alt="">
-            <p><span style="font-weight: bold">Cold Noodles With Zucchini</span> <br>
-                Duc Hung <br>
-                Time take: 15 minutes</p>
-        </div>
-        <div class="col-3">
-            <img src="img/scallops.jpg" class="w-100" alt="">
-            <p><span style="font-weight: bold">Scallops With Bread-Crumb Salsa Verde</span> <br>
-                Gordon Ramsey <br>
-                Time take: 30 minutes</p>
+            </c:forEach>
         </div>
     </div>
 </div>
