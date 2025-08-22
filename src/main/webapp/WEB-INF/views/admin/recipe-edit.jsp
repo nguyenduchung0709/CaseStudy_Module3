@@ -5,6 +5,7 @@
     <title>Edit recipe</title>
 </head>
 <body>
+<input type="hidden" name="action" value="edit">
 <form action="/admin/recipe" method="post">
     <table>
         <tr>
@@ -50,6 +51,7 @@
             </td>
         </tr>
     </table>
+    <input type="submit" value="Save"/>
 </form>
 </body>
 </html>

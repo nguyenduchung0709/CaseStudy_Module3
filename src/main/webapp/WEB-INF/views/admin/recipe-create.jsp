@@ -12,12 +12,13 @@
 </head>
 <body>
 <form action="/admin/recipe" method="post">
-    <input type="hidden" name="action" value="create">
-    <input name="id">
-    <input name="name">
-    <input name="imageURL">
-    <input name="ingredients">
-    <input name="instructions">
+
+        <input type="hidden" name="action" value="create">
+<%--        <input name="id">--%>
+        <input name="name" placeholder="Enter name">
+        <input name="imageURL" placeholder="Enter image URL">
+        <input name="ingredients"  placeholder="Enter ingredients">
+        <input name="instructions" placeholder="Enter instructions">
     <button type="submit">Create</button>
 </form>
 </body>

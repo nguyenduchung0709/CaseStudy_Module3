@@ -67,22 +67,20 @@ public class AdminRecipeController extends HttpServlet {
         if (action == null) {
             action = "list";
         }
-        RequestDispatcher dispatcher = null;
         try {
             switch (action) {
                 case "create":
                     addRecipe(req, resp);
-                    dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/recipe-list.jsp");
+                    resp.sendRedirect(req.getContextPath() + "/admin/recipe");
                     break;
                 case "edit":
                     editRecipe(req, resp);
-                    dispatcher = req.getRequestDispatcher("/WEB-INF/views/admin/recipe-list.jsp");
+                    resp.sendRedirect(req.getContextPath() + "/admin/recipe");
                     break;
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);
         }
-        dispatcher.forward(req,resp);
     }
 
     private void listRecipe(HttpServletRequest req, HttpServletResponse resp) throws SQLException, ServletException, IOException {

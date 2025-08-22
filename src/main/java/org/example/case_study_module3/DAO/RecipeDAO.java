@@ -13,7 +13,7 @@ public class RecipeDAO {
 
     private static final String SELECT_ALL_RECIPES = "SELECT * FROM recipes";
     private static final String SELECT_RECIPE_BY_ID = "SELECT * FROM recipes WHERE id=?";
-    private static final String ADD_RECIPE = "INSERT INTO recipes VALUES (?,?,?,?)";
+    private static final String ADD_RECIPE = "INSERT INTO recipes (name, image_url, ingredients, instructions) VALUES (?,?,?,?)";
     private static final String EDIT_RECIPE = "UPDATE recipes SET name=?, imageURL=?, ingredients=?, instructions=? WHERE id=?";
     private static final String DELETE_RECIPE = "DELETE FROM recipes WHERE id=?";
 
