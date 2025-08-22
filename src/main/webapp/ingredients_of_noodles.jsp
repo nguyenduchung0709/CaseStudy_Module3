@@ -6,8 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Mozilla+Headline:wght@200..700&family=Playwrite+AU+QLD:wght@100..400&family=Playwrite+VN+Guides&display=swap"
           rel="stylesheet">
-    <title></title>
+    <title>Ingredients Of Cold Noodle</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleofingredients.css">
 </head>
@@ -29,14 +27,14 @@
         <div class="row  align-items-center" style="margin-bottom: 20px; border-bottom: 1px solid grey;">
             <div class="col-5 d-flex flex-column justify-content-center">
                 <div class="description">
-                    <p style="font-size: 40px; color: #DF321B">Meatballs With Any Meat</p>
+                    <p style="font-size: 40px; color: #DF321B">Cold Noodles With Zucchini</p>
                     <br>
-                    <i class="bi bi-calendar"></i> Update Jun. 14 2025
+                    <i class="bi bi-calendar"></i> Published July 21, 2024
                     <p><strong>By <span style="text-decoration: underline;">Nguyen Duc Hung</span></strong></p>
                 </div>
             </div>
             <div class="col-7">
-                <img src="img/meatball.jpg" class="w-100" alt="">
+                <img src="img/vegetable.jpg" class="w-100" alt="">
             </div>
         </div>
     </div>
@@ -46,8 +44,19 @@
                 <table>
                     <tr>
                         <th>Total Time</th>
-                        <td>20 minutes</td>
+                        <td>15 minutes</td>
                     </tr>
+
+                    <tr>
+                        <th>Prep Time</th>
+                        <td>5 minutes</td>
+                    </tr>
+
+                    <tr>
+                        <th>Cook Time</th>
+                        <td>10 minutes</td>
+                    </tr>
+
                     <tr>
                         <th>Rating</th>
 
@@ -56,33 +65,31 @@
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
                             <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-half"></i> (5,878)
+                            <i class="bi bi-star-half"></i> (6,778)
                         </td>
                     </tr>
                 </table>
                 <br>
                 <div class="info">
                     <strong>👉 More Meals</strong>
-                    <p><a href="">🍜Cold Noodles With Zucchini</a></p>
-                    <p><a href="">🍅Burst Cherry Tomato Orzotto</a></p>
-                    <p><a href="">🍗Slow Cooker Gochujang Chicken and Tomatoes</a></p>
+                    <p><a href="ingredients_of_meatball.jsp">🧆Meat Ball With Any Meal</a></p>
+                    <p><a href="ingredients_of_burstcherry.jsp">🍅Burst Cherry Tomato Orzotto</a></p>
+                    <p><a href="ingredients_of_chicken.jsp">🍗Slow Cooker Gochujang Chicken and Tomatoes</a></p>
                 </div>
             </div>
             <div class="col-7">
                 <div class="process">
-                    <p>Making great meatballs is all about memorizing a basic ratio that you can adjust to suit your taste.
-                        Start with a pound of ground meat — any kind will work, even fish if you want to take it in that
-                        direction. Add ½ cup bread crumbs for lightness, a teaspoon of salt, and an egg to bind it together.
-                        That’s all you need. Pepper and other spices, chopped herbs and minced allium (garlic, onion,
-                        scallions or shallot) can be added to taste. Then broil or fry as you like.</p>
+                    <p>Zucchini loves the kiss of heat but can easily turn to mush. Briefly salting and drying
+                        half-moons of zucchini before quickly stir-frying them, mostly on one side, maintains their
+                        texture while lending so much flavor. An impactful dressing of maple syrup, soy sauce and fish
+                        sauce — plus a pinch of concentrated savoriness in the form of garlic powder — seasons both
+                        stir-fry and noodle. Ice is the secret ingredient that helps to cool down the noodles for quick
+                        eating, as well as to melt down and open up the flavors of the dressing (as water is wont to do)
+                        while you eat. The final spritz of citrus is not optional: It finishes the dressing and makes
+                        this chill meal taste multidimensional. A tableside sprinkle of toasted sesame seeds, furikake
+                        or shichimi togarashi is welcome.</p>
 
-                    <p><span style="font-weight: bold">Why You Should Trust This Recipe</span></p>
 
-                    Melissa Clark, a food writer for more than 25 years, creates her fresh takes on classic recipes by
-                    trying at least half a dozen different approaches. A professional recipe tester then makes her
-                    recipe a minimum of three times (and sometimes more than 12) to ensure it’ll come out perfectly for
-                    all home cooks. For these meatballs, Melissa tinkered with ratios of seasonings to breadcrumbs to
-                    ensure the formula works with any type of ground meat.</p>
                 </div>
             </div>
         </div>
