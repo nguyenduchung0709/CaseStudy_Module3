@@ -5,8 +5,8 @@
     <title>Edit recipe</title>
 </head>
 <body>
-<input type="hidden" name="action" value="edit">
 <form action="/admin/recipe" method="post">
+    <input type="hidden" name="action" value="edit">
     <table>
         <tr>
             <th>ID</th>
@@ -35,19 +35,19 @@
         </tr>
         <tr>
             <td>
-                <c:out value="${recipe.id}"></c:out>
+                <c:out value="${recipe.id}"></c:out> <input type="hidden" name="id" value="${recipe.id}">
             </td>
             <td>
-                <input type="text" name="name">
+                <input type="text" name="name" value="${recipe.name}">
             </td>
             <td>
-                <input type="text" name="imageURL">
+                <input type="text" name="imageURL" value="${recipe.imageURL}">
             </td>
             <td>
-                <input type="text" name="ingredients">
+                <input type="text" name="ingredients" value="${recipe.ingredients}">
             </td>
             <td>
-                <input type="text" name="instructions">
+                <input type="text" name="instructions" value="${recipe.instructions}">
             </td>
         </tr>
     </table>

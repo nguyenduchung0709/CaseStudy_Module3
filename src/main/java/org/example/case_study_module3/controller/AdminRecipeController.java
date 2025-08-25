@@ -76,7 +76,7 @@ public class AdminRecipeController extends HttpServlet {
                 case "edit":
                     editRecipe(req, resp);
                     resp.sendRedirect(req.getContextPath() + "/admin/recipe");
-                    break;
+                    break;  
             }
         } catch (SQLException e) {
             throw new RuntimeException(e);

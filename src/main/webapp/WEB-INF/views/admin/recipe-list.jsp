@@ -18,7 +18,7 @@
         <tr>
             <td>ID</td>
             <td>Name</td>
-            <td>Image</td>
+            <td>ImageURL</td>
             <td>Ingredients</td>
             <td>Instructions</td>
         </tr>
