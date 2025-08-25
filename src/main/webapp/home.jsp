@@ -55,13 +55,14 @@
     <div class="row">
         <div class="list_food">
             <c:forEach items="${listRecipe}" var="recipe">
-        <div class="col-3">
-            <img src="<c:out value="${recipe.imageURL}" />" width="306" height="306" alt="">
-            <p><span style="font-weight: bold"><c:out value="${recipe.name}"/></span> <br>
-                <c:out value="${recipe.ingredients}"/> <br>
-                Time take: <c:out value="${recipe.instructions}"/> hours</p>
-
-        </div>
+                <div class="col-3">
+                    <a href="/home?action=view&id=${recipe.id}"><img src="<c:out value="${recipe.imageURL}" />" width="306" height="306" alt="">
+                        <p>
+                            <span style="font-weight: bold"><c:out value="${recipe.name}"/></span> <br>
+                            <c:out value="${recipe.ingredients}"/> <br>
+                            Time take: <c:out value="${recipe.instructions}"/> hours
+                        </p></a>
+                </div>
             </c:forEach>
         </div>
     </div>
