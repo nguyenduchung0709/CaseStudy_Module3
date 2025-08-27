@@ -22,7 +22,7 @@
         </a>
     </div>
     <nav>
-        <a href="home.jsp" target="_top">Home</a>
+        <a href="/home" target="_top">Home</a>
         <div class="dropdown">
             <a href="" class="dropbtn">Recipes</a>
             <div class="dropdown-content">
@@ -38,8 +38,8 @@
                 <div class="first_col">
                     <ul>
                         <li>Meat & Seafood</li>
-                        <li><a href="">Chicken</a></li>
-                        <li><a href="">Beef</a></li>
+                        <li><a href="#">Chicken</a></li>
+                        <li><a href="#">Beef</a></li>
                     </ul>
 
                 </div>
@@ -47,8 +47,8 @@
                 <div class="second_col">
                     <ul>
                         <li>Vegetables & Fruits</li>
-                        <li><a href="">Zucchini</a></li>
-                        <li><a href="">Tomato</a></li>
+                        <li><a href="#">Zucchini</a></li>
+                        <li><a href="#">Tomato</a></li>
                     </ul>
                 </div>
             </div>

@@ -38,6 +38,9 @@ public class HomeController extends HttpServlet {
                     request.setAttribute("recipe",recipe);
                     dispatcher = request.getRequestDispatcher("/WEB-INF/views/recipe.jsp");
                     break;
+                case "ingredients":
+
+                    break;
                 default:
                     request.setAttribute("username", "Nguyen Duc Hung!");
                     request.setAttribute("listRecipe", recipeDAO.selectAllRecipes());
