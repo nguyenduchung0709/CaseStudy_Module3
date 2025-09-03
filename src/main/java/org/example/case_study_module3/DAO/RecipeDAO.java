@@ -16,7 +16,8 @@ public class RecipeDAO {
     private static final String ADD_RECIPE = "INSERT INTO recipes (name, image_url, ingredients, instructions) VALUES (?,?,?,?)";
     private static final String EDIT_RECIPE = "UPDATE recipes SET name=?, image_url=?, ingredients=?, instructions=? WHERE id=?";
     private static final String DELETE_RECIPE = "DELETE FROM recipes WHERE id=?";
-
+    private static final String GET_10_INGREDIENTS = "SELECT ingredients FROM recipes LIMIT 10";
+    private static final String GET_RECIPE_BY_INGREDIENTS = "SELECT * FROM recipes WHERE ingredients LIKE ?";
     public RecipeDAO() {
     }
 
@@ -114,5 +115,52 @@ public class RecipeDAO {
             rowDeleted = stmt.executeUpdate() > 0;
         }
         return rowDeleted;
+    }
+
+    public List<String> get10Ingredients() {
+        List<String> ingredientsList = new ArrayList<>();
+
+        try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(GET_10_INGREDIENTS)) {
+            ResultSet resultSet = preparedStatement.executeQuery();
+            while (resultSet.next()) {
+                String[] parts = resultSet.getString("ingredients").split(",");
+                for (String ingredient : parts) {
+                    String trimmedIngredient = ingredient.trim();
+                    if (!ingredientsList.contains(trimmedIngredient)) {
+                        ingredientsList.add(trimmedIngredient);
+                        if (ingredientsList.size() == 10) {
+                            return ingredientsList;
+                        }
+                    }
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return ingredientsList;
+    }
+
+    public List<Recipe> getRecipeByIngredient(String ingredients) {
+        List<Recipe> recipes = new ArrayList<>();
+
+        try (Connection conn = getConnection(); PreparedStatement stmt = conn.prepareStatement(GET_RECIPE_BY_INGREDIENTS)) {
+
+            stmt.setString(1, "%" + ingredients + "%");
+            ResultSet rs = stmt.executeQuery();
+
+            while (rs.next()) {
+                Recipe recipe = new Recipe(
+                        rs.getInt("id"),
+                        rs.getString("name"),
+                        rs.getString("image_url"),
+                        rs.getString("ingredients"),
+                        rs.getString("instructions")
+                );
+                recipes.add(recipe);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return recipes;
     }
 }

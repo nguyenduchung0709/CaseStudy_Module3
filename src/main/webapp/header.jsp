@@ -38,8 +38,8 @@
                 <div class="first_col">
                     <ul>
                         <li>Meat & Seafood</li>
-                        <li><a href="#">Chicken</a></li>
-                        <li><a href="#">Beef</a></li>
+                        <li><a href="recipe?action=ingredients&name=Chicken">Chicken</a></li>
+                        <li><a href="recipe?action=ingredients&name=Beef">Beef</a></li>
                     </ul>
 
                 </div>

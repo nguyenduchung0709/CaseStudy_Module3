@@ -8,6 +8,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 import java.io.IOException;
+import java.util.List;
 
 @WebServlet(name = "Home", value = {"/home","/"})
 public class HomeController extends HttpServlet {
@@ -39,7 +40,12 @@ public class HomeController extends HttpServlet {
                     dispatcher = request.getRequestDispatcher("/WEB-INF/views/recipe.jsp");
                     break;
                 case "ingredients":
+                    String ingredientName = request.getParameter("name");
+                    List<Recipe> recipes = recipeDAO.getRecipeByIngredient(ingredientName);
+                    request.setAttribute("ingredientName", ingredientName);
+                    request.setAttribute("recipes", recipes);
 
+                    dispatcher = request.getRequestDispatcher("/WEB-INF/views/ingredient.jsp");
                     break;
                 default:
                     request.setAttribute("username", "Nguyen Duc Hung!");
