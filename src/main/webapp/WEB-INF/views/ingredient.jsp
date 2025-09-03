@@ -9,6 +9,11 @@
 </head>
 <body>
 
+    <form action="/home" method="get" class="mb-4 d-flex">
+        <input type="hidden" name="action" value="ingredients">
+        <input type="text" name="name" class="form-control me-2" placeholder="Search ingredient..." value="${ingredientName}">
+        <button type="submit" class="btn btn-primary">Search</button>
+    </form>
     <h2>Recipes with ${ingredientName}</h2>
     <c:forEach items="${recipes}" var="recipe">
         <div class="col-3">

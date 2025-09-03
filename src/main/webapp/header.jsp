@@ -47,8 +47,8 @@
                 <div class="second_col">
                     <ul>
                         <li>Vegetables & Fruits</li>
-                        <li><a href="#">Zucchini</a></li>
-                        <li><a href="#">Tomato</a></li>
+                        <li><a href="recipe?action=ingredients&name=Zucchini">Zucchini</a></li>
+                        <li><a href="recipe?action=ingredients&name=Tomato">Tomato</a></li>
                     </ul>
                 </div>
             </div>
