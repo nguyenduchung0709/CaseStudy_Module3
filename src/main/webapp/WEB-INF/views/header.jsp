@@ -12,12 +12,12 @@
     <title>Header</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!--  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
 <header>
     <div class="logo">
-        <a href="home.jsp">
+        <a href="../../home.jsp">
             <h1>My Cooking Site</h1>
         </a>
     </div>
@@ -26,7 +26,7 @@
         <div class="dropdown">
             <a href="" class="dropbtn">Recipes</a>
             <div class="dropdown-content">
-                <a href="ingredients_of_noodles.jsp">Cold Noodles With Zucchini</a>
+                <a href="../../ingredients_of_noodles.jsp">Cold Noodles With Zucchini</a>
                 <a href="ingredients_of_burstcherry.html">Burst Cherry Tomato Orzotto</a>
                 <a href="ingredients_of_chicken.html">Slow Cooker Gochujang Chicken and Tomatoes</a>
                 <a href="ingredients_of_scallops.html">Scallops With Bread-Crumb Salsa Verde</a>
@@ -38,8 +38,8 @@
                 <div class="first_col">
                     <ul>
                         <li>Meat & Seafood</li>
-                        <li><a href="recipe?action=ingredients&name=Chicken">Chicken</a></li>
-                        <li><a href="recipe?action=ingredients&name=Beef">Beef</a></li>
+                        <li><a href="home?action=ingredients&name=Chicken">Chicken</a></li>
+                        <li><a href="home?action=ingredients&name=Beef">Beef</a></li>
                     </ul>
 
                 </div>
@@ -47,8 +47,8 @@
                 <div class="second_col">
                     <ul>
                         <li>Vegetables & Fruits</li>
-                        <li><a href="recipe?action=ingredients&name=Zucchini">Zucchini</a></li>
-                        <li><a href="recipe?action=ingredients&name=Tomato">Tomato</a></li>
+                        <li><a href="home?action=ingredients&name=Zucchini">Zucchini</a></li>
+                        <li><a href="home?action=ingredients&name=Tomato">Tomato</a></li>
                     </ul>
                 </div>
             </div>

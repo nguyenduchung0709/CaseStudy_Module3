@@ -10,7 +10,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "Home", value = {"/home","/"})
+@WebServlet(name = "Home", value = {"/home"})
 public class HomeController extends HttpServlet {
 
     private RecipeDAO recipeDAO;

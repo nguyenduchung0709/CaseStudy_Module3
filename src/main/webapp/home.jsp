@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-<jsp:include page="header.jsp"/>
+<jsp:include page="WEB-INF/views/header.jsp"/>
 <div class="container " style="margin-top: 60px;">
     <div id="content">
         <div class="row align-items-center">
@@ -60,7 +60,6 @@
                         <p>
                             <span style="font-weight: bold"><c:out value="${recipe.name}"/></span> <br>
                             <c:out value="${recipe.ingredients}"/> <br>
-                            Time take: <c:out value="${recipe.instructions}"/> hours
                         </p></a>
                 </div>
             </c:forEach>

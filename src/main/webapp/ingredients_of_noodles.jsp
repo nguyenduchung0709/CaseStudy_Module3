@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/styleofingredients.css">
 </head>
 <body>
-<jsp:include page="header.jsp"/>
+<jsp:include page="WEB-INF/views/header.jsp"/>
 <div class="container" style="margin-top: 60px;">
     <div id="content">
         <div class="row  align-items-center" style="margin-bottom: 20px; border-bottom: 1px solid grey;">
